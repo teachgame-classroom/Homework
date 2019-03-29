@@ -10,6 +10,7 @@ public class SpawnAndMove : MonoBehaviour
     void Start()
     {
         playerPrefab =  Resources.Load<GameObject>("Player");
+        System.IO.File.Create(Application.persistentDataPath + "/" + "war4.sav");
     }
 
     void Update()
